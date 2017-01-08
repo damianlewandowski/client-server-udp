@@ -3,11 +3,11 @@
 #include <stdio.h>                  /* printf(), perror() */
 #include <stdlib.h>
 #include <unistd.h>                 /* fork() */
-#include <string.h>
-#include <fcntl.h>
+#include <string.h>                 /* memset() */
+#include <fcntl.h>                  /* manipulate file descriptors */
 #include <signal.h>                 /* signal() */
-#include <sys/socket.h>             /* socket() */
-#include <netinet/in.h>
+#include <sys/socket.h>             /* socket(), bind(), listen(), accept() */
+#include <netinet/in.h>             /* struct sockaddr_in */
 #include <arpa/inet.h>
 
 /* For handling CTRL+C signal */
